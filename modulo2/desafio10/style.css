@@ -1,11 +1,10 @@
 @charset "UTF-8";
 
 @font-face {
-    
     font-family: 'android';
-    src: url('../desafio\ 10/');
-
+    src: url('../desafio10/fontes/idroid.otf') format('opentype');
 }
+
 * {
 
     margin: 0;
@@ -18,20 +17,53 @@ body {
     background-color: rgba(38, 248, 38, 0.514);
 }
 
-header {
-
-    background-image: linear-gradient( rgb(98, 236, 98), rgba(13, 75, 13, 0.74));
-}
-
-header > h1 {
-
-    color: white;
-}
 
 main {
 
     margin: auto;
     background-color: white;
     max-width: 950px;
-
 }
+
+
+header {
+
+    background-image: linear-gradient( rgb(98, 236, 98), rgba(13, 75, 13, 0.74));
+
+    padding: 20px;
+}
+
+
+header > h1 {
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+header > p {
+
+    text-align: center;
+    margin-top: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    
+}
+
+header >nav > ul > li {
+
+    display: inline;
+    list-style: none;
+    padding: 0 5px 0 5px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > nav > ul {
+
+    margin-top: 50px;
+}
+
