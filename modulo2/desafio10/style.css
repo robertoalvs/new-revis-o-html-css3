@@ -23,6 +23,7 @@ main {
     margin: auto;
     background-color: white;
     max-width: 850px;
+    border-radius: 0 0 10px 10px;
 }
 
 
@@ -42,6 +43,7 @@ header > h1 {
     text-align: center;
     font-size: 2em;
     margin-top: 15px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
 }
 
 
@@ -52,6 +54,7 @@ header > p {
     margin-bottom: 39px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
     
 }
 
@@ -84,12 +87,12 @@ h2 {
 
 .sessao2 > article > h2 {
 
-    background-image: linear-gradient(to right, green, white);
+    background-image: linear-gradient(to right, rgba(0, 128, 0, 0.534), white);
 }
 
 .sessao3 > article > h2 {
 
-    background-image: linear-gradient(to right, green, white);
+    background-image: linear-gradient(to right, rgba(0, 128, 0, 0.534), white);
     padding-left: 10px;
 }
 
@@ -108,9 +111,62 @@ h2 {
     
 }
 
+.video-youtube {
+    background-color: rgba(6, 105, 14, 0.678);
+    padding: 30px;
+}
+
 iframe {
 
      box-shadow: 8px 5px 15px 0px rgba(0, 0, 0, 0.416);
      border-radius: 10px;
+     
 }
 
+aside {
+
+    background-color: rgba(146, 241, 146, 0.644);
+    margin: 20px auto;
+    width: 90%;
+    height: 70%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.sessao4 > h3 {
+
+    background-color: rgba(0, 128, 0, 0.829);
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+.menu-lateral > ul {
+    padding-left: 20px;
+    margin: auto;
+    columns: 2;
+}
+
+aside > section > p {
+
+    padding: 10px;
+    text-align: justify;
+    text-indent: 10px;
+}
+
+.aside-paragrafo {
+
+    padding: 0 20px 20px 20px;
+    text-indent: 10px;
+    text-align: justify;
+}
+
+footer {
+
+    text-align: center;
+    background-color: green;
+    margin-top: 15px;
+    color: white;
+    text-transform: lowercase;
+    padding: 5px;
+}
