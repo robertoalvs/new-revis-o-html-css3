@@ -32,6 +32,7 @@ header {
     background-image: linear-gradient( rgb(98, 236, 98), rgba(13, 75, 13, 0.74));
     padding: 20px;
     margin: auto;
+   height: auto;
 }
 
 
@@ -72,6 +73,12 @@ header > nav > ul {
     margin-top: 20px;
 }
 
+.menu {
+
+    background-color: rgb(238, 240, 146);
+    padding: 5px;
+}
+
 .sessao1, .sessao2, .sessao3 {
 
     padding: 10px;
@@ -82,6 +89,11 @@ h2 {
     font-family: 'android';
     margin-bottom: 10px;
     color: rgb(17, 99, 17);
+}
+
+.h2-principal {
+
+    margin-top: 10px;
 }
 
 
@@ -108,7 +120,6 @@ h2 {
 
     display: block;
     margin: auto;
-    
 }
 
 .video-youtube {
