@@ -5,6 +5,48 @@
     src: url('../desafio10/fontes/idroid.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'bebas';
+    src: url('../desafio10/fontes/BebasNeue-Regular.ttf') format('truetype');
+}
+
+
+/*  
+    PALHETA DE CORES PARA O SITE
+
+    #c5ebd6
+    #83e1ad
+    #3ddc84
+    #2fa866
+    #1a5c37
+    #063d1e
+
+*/
+
+/* Variavel em CSS3 */
+
+
+    :root {
+
+        /* PALHETA DE CORES */
+        --cor00: #c5ebd6;
+        --cor01: #83e1ad;
+        --cor02: #3ddc84;
+        --cor03: #2fa866;
+        --cor04: #1a5c37;
+        --cor05: #063d1e;
+
+        /* FONTES */
+
+        --fonte-google: 'android';
+        --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+        --fonte-destaque: 'bebas'
+        
+    }
+
+
+
+/* RESET GLOBAL */
 * {
 
     margin: 0;
@@ -12,9 +54,14 @@
 }
 
 
+
+
+/* INICIO CONF SITE */
+
 body {
 
-    background-color: rgba(38, 248, 38, 0.514);
+    background-color: var(--cor00);
+    font-family: var(--fonte-padrao);
 }
 
 
@@ -30,16 +77,16 @@ main {
 header {
 
     background-image: linear-gradient( rgb(98, 236, 98), rgba(13, 75, 13, 0.74));
-    padding: 20px;
+    padding: 11px;
     margin: auto;
-   height: auto;
+     height: auto;
 }
 
 
 header > h1 {
 
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-destaque);
     text-transform: uppercase;
     text-align: center;
     font-size: 2em;
@@ -52,12 +99,12 @@ header > p {
 
     text-align: center;
     margin-top: 25px;
-    margin-bottom: 39px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
     
 }
+
 
 header >nav > ul > li {
 
@@ -79,6 +126,10 @@ header > nav > ul {
     padding: 5px;
 }
 
+a {
+
+    text-decoration: none;
+}
 .sessao1, .sessao2, .sessao3 {
 
     padding: 10px;
@@ -86,7 +137,7 @@ header > nav > ul {
 
 h2 {
     font-size: 1.45em;
-    font-family: 'android';
+    font-family: var(--fonte-google);
     margin-bottom: 10px;
     color: rgb(17, 99, 17);
 }
@@ -175,7 +226,7 @@ aside > section > p {
 footer {
 
     text-align: center;
-    background-color: green;
+    background-color: var(--cor05);
     margin-top: 15px;
     color: white;
     text-transform: lowercase;
