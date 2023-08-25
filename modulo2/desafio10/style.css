@@ -53,13 +53,23 @@
     padding: 0;
 }
 
-@media screen and (max-width: 500px) {
 
-    header {
 
-        background-color: black;
+@media screen and (max-width: 550px) and (orientation: portrait){
+
+    .h2-principal {
+
+        font-size: 1.4em;
+       
     }
+
+    header > nav > ul {
+
+        margin-left: 45px;
+    }
+
 }
+
 
 
 /* INICIO CONF SITE */
@@ -136,6 +146,7 @@ a {
 
     text-decoration: none;
 }
+
 .sessao1, .sessao2, .sessao3 {
 
     padding: 10px;
