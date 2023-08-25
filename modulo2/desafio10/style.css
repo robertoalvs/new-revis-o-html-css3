@@ -139,13 +139,6 @@ header > nav > ul {
     
 }
 
-.menu {
-
-    background-color: var(--cor01);
-    padding: 5px 5px 5px 9px;
-    margin-right: 7px;
-}
-
 .menu1 {
 
     background-color: var(--cor01);
@@ -168,7 +161,6 @@ nav > ul > li .sub-menu {
     top: 14px;
     background-color: var(--cor05);
     list-style: none;
-    visibility: none;
     padding: 5px;
     margin-bottom: 2px;
     width: 70px;
@@ -183,7 +175,6 @@ nav > ul > li .sub-menu {
     top: 14px;
     background-color: var(--cor05);
     list-style: none;
-    visibility: none;
     padding: 5px;
     margin-bottom: 2px;
     width: 70px;
@@ -191,12 +182,40 @@ nav > ul > li .sub-menu {
     border-radius: 5px;
 }
 
-nav > ul > li ul {
+.sub2-li {
+
+    position: relative;
+    left: 165px;
+    top: 14px;
+    background-color: var(--cor05);
+    list-style: none;
+    padding: 5px;
+    margin-bottom: 2px;
+    width: 70px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.sub3-li {
+
+    position: relative;
+    left: 288px;
+    top: 14px;
+    background-color: var(--cor05);
+    list-style: none;
+    padding: 5px;
+    margin-bottom: 2px;
+    width: 70px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+nav > ul > li .sub-menu {
 
     visibility: hidden;
 }
 
-nav > ul li:hover ul {
+nav > ul li:hover .sub-menu {
 
     visibility: visible;
 }
