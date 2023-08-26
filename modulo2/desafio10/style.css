@@ -149,7 +149,7 @@ header > nav > ul {
 
 /* ================================ sub-menu ========================= */
 
-nav > ul > li .sub-menu, .sub1-menu, .sub2-menu, .sub3-menu  {
+nav > ul  ul  {
 
     position: absolute;
    
@@ -212,12 +212,12 @@ nav > ul > li .sub-menu, .sub1-menu, .sub2-menu, .sub3-menu  {
     border-radius: 5px;
 }
 
-.menu-cabecario > .ul-geral > .menu .sub-menu, .menu1 .sub1-menu, .menu2 .sub2-menu, .menu3 .sub3-menu {
+.menu-cabecario > .ul-geral ul.sub-menu, ul.sub1-menu, ul.sub2-menu, ul.sub3-menu {
 
     visibility: hidden;
 }
 
-.menu-cabecario > .ul-geral > .menu:hover .sub-menu, .menu1:hover .sub1-menu, .menu2:hover .sub2-menu, .menu3:hover .sub3-menu {
+.menu-cabecario >ul li.menu:hover ul, li.menu1:hover ul, li.menu2:hover ul, li.menu3:hover ul{
 
     visibility: visible;
 }
