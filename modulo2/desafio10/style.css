@@ -139,7 +139,7 @@ header > nav > ul {
     
 }
 
-.menu1 {
+.menu, .menu1, .menu2, .menu3 {
 
     background-color: var(--cor01);
     padding: 5px 5px 5px 9px;
@@ -149,10 +149,12 @@ header > nav > ul {
 
 /* ================================ sub-menu ========================= */
 
-nav > ul > li .sub-menu {
+nav > ul > li .sub-menu, .sub1-menu, .sub2-menu, .sub3-menu  {
 
     position: absolute;
+   
 }
+
 
 .sub-li {
 
@@ -210,12 +212,12 @@ nav > ul > li .sub-menu {
     border-radius: 5px;
 }
 
-nav > ul > li .sub-menu {
+.menu-cabecario > .ul-geral > .menu .sub-menu, .menu1 .sub1-menu, .menu2 .sub2-menu, .menu3 .sub3-menu {
 
     visibility: hidden;
 }
 
-nav > ul li:hover .sub-menu {
+.menu-cabecario > .ul-geral > .menu:hover .sub-menu, .menu1:hover .sub1-menu, .menu2:hover .sub2-menu, .menu3:hover .sub3-menu {
 
     visibility: visible;
 }
