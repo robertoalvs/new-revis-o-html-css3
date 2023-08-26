@@ -139,7 +139,7 @@ header > nav > ul {
     
 }
 
-.menu1 {
+.menu, .menu1, .menu2, .menu3 {
 
     background-color: var(--cor01);
     padding: 5px 5px 5px 9px;
@@ -149,10 +149,12 @@ header > nav > ul {
 
 /* ================================ sub-menu ========================= */
 
-nav > ul > li .sub-menu {
+nav > ul  ul  {
 
     position: absolute;
+   
 }
+
 
 .sub-li {
 
@@ -210,12 +212,12 @@ nav > ul > li .sub-menu {
     border-radius: 5px;
 }
 
-nav > ul > li .sub-menu {
+.menu-cabecario > .ul-geral ul.sub-menu, ul.sub1-menu, ul.sub2-menu, ul.sub3-menu {
 
     visibility: hidden;
 }
 
-nav > ul li:hover .sub-menu {
+.menu-cabecario >ul li.menu:hover ul, li.menu1:hover ul, li.menu2:hover ul, li.menu3:hover ul{
 
     visibility: visible;
 }
