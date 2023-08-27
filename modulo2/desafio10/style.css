@@ -121,107 +121,44 @@ header > p {
     
 }
 
+/* ===== NAVEGADOR - MENU ===== */
 
-header >nav > ul > li {
+.menu-cabecario > .ul-geral .menu, .menu1, .menu2, .menu3{
 
-    display: inline;
+    display: inline-block;
     list-style: none;
-    padding: 0 5px 0 5px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px;
+    background-color: #3ddc84;
+    padding: 6px;
+    height: 20px; 
+    margin-right: 5px;   
 }
-
-header > nav > ul {
-
-    margin-top: 20px;
-    margin-left: 15px;
-    
-}
-
-.menu, .menu1, .menu2, .menu3 {
-
-    background-color: var(--cor01);
-    padding: 5px 5px 5px 9px;
-    margin-right: 7px;
+.sub-li, .sub1-li, .sub2-li, .sub3-li {
 
 }
+.ul-geral {
+
+    background-color: #1a5c37;
+    width: 100%;
+    height: 38px;
+    padding: 8px 0px 4px 0px ;
+}
+
+
 
 /* ================================ sub-menu ========================= */
 
-nav > ul  ul  {
+       .menu-cabecario> .ul-geral .menu, .sub-li, .sub1-li, .sub2-li, .sub3-li {
 
-    position: absolute;
-   
-}
+            list-style: none;
+        }
 
+        .menu-cabecario> .ul-geral li.sub-li, li.sub1-li, li.sub2-li, li.sub3-li {
 
-.sub-li {
-
-    position: relative;
-    left: -8px;
-    top: 14px;
-    background-color: var(--cor05);
-    list-style: none;
-    padding: 5px;
-    margin-bottom: 2px;
-    width: 70px;
-    text-align: center;
-    border-radius: 5px;
-}
-
-.sub1-li {
-
-    position: relative;
-    left: 63px;
-    top: 14px;
-    background-color: var(--cor05);
-    list-style: none;
-    padding: 5px;
-    margin-bottom: 2px;
-    width: 70px;
-    text-align: center;
-    border-radius: 5px;
-}
-
-.sub2-li {
-
-    position: relative;
-    left: 165px;
-    top: 14px;
-    background-color: var(--cor05);
-    list-style: none;
-    padding: 5px;
-    margin-bottom: 2px;
-    width: 70px;
-    text-align: center;
-    border-radius: 5px;
-}
-
-.sub3-li {
-
-    position: relative;
-    left: 288px;
-    top: 14px;
-    background-color: var(--cor05);
-    list-style: none;
-    padding: 5px;
-    margin-bottom: 2px;
-    width: 70px;
-    text-align: center;
-    border-radius: 5px;
-}
-
-.menu-cabecario > .ul-geral ul.sub-menu, ul.sub1-menu, ul.sub2-menu, ul.sub3-menu {
-
-    visibility: hidden;
-}
-
-.menu-cabecario >ul li.menu:hover ul, li.menu1:hover ul, li.menu2:hover ul, li.menu3:hover ul{
-
-    visibility: visible;
-}
-
+            visibility: hidden;
+        }
 /* ================================================== */
 
 a {
