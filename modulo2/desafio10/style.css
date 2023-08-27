@@ -133,26 +133,39 @@ header > p {
     padding: 6px;
     height: 20px; 
     margin-right: 5px;   
+    background-color: #063d1e;
 }
 
 .sub-menu, .sub1-menu, .sub2-menu, .sub3-menu {
 
 position: absolute;
 
+
 }
 
 .menu {
 
     margin-left: 30px;
+    background-color: #063d1e;
+    width: 60px;
+    text-align: center;
+    box-shadow: 2px 2px 2px var(--cor01);
+}
+
+.menu1, .menu2, .menu3 {
+
+    font-size: 0.960em;
+    background-color: #063d1e;
+    text-align: center;
+    box-shadow: 2px 2px 2px var(--cor01);
 }
 
 .ul-geral {
 
-    background-image: linear-gradient( rgb(98, 236, 98), rgba(13, 75, 13, 0.74));
+    background-color: #2fa866;
     width: 100%;
-    height: 38px;
+    height: 34px;
     padding: 8px 0px 4px 0px ;
-    
 }
 
 
@@ -172,6 +185,7 @@ position: absolute;
             border-radius: 6px;
             width: 100px;
             text-align: center;
+            box-shadow: 2px 2px 2px var(--cor05);
         }
 
 
@@ -206,6 +220,7 @@ a {
 
     text-decoration: none;
     text-align: center;
+    color: #c5ebd6;
 }
 
 .sessao1, .sessao2, .sessao3 {
