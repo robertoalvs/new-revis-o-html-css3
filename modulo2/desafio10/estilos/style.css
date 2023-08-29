@@ -245,6 +245,11 @@ a {
     color: #c5ebd6;
 }
 
+.externo::after {
+
+    content: '\1F517';
+}
+
 a:hover {
 
     color: #063d1e;
@@ -348,20 +353,24 @@ aside {
     height: 70%;
     border-radius: 10px;
     padding: 20px;
+    box-shadow: 2px 2px 10px var(--cor05);
 }
 
 .sessao4 > h3 {
 
     background-color: rgba(0, 128, 0, 0.829);
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 5px 5px 0px 0px;
+    padding: 7px;
     color: white;
+    margin: -20px -20px 0px -20px;
 }
 
 .menu-lateral > ul {
     padding-left: 20px;
     margin: auto;
     columns: 2;
+    list-style-type: '\2714\00A0';
+    /* \00A0 deixa um epaço */
 }
 
 aside > section > p {
