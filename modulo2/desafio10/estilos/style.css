@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'android';
-    src: url('../desafio10/fontes/idroid.otf') format('opentype');
+    src: url('../fontes/idroid.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'bebas';
-    src: url('../desafio10/fontes/BebasNeue-Regular.ttf') format('truetype');
+    src: url('../fontes/BebasNeue-Regular.ttf') format('truetype');
 }
 
 
@@ -73,6 +73,16 @@
 
         margin-left: 50px;
     }
+
+    .video-youtube >iframe {
+
+        box-shadow: 8px 5px 15px 0px rgba(0, 0, 0, 0.416);
+        border-radius: 10px;
+        width: 400px;
+        height: 250px;
+        margin: auto;
+        
+   }
 
 }
 
@@ -192,6 +202,12 @@ position: absolute;
             width: 100px;
             text-align: center;
             box-shadow: 2px 2px 2px var(--cor05);
+            transition: background-color 3s;
+        }
+
+        .sub-li:hover, .sub1-li:hover, .sub2-li:hover, .sub3-li:hover {
+
+            background-color: #1a5c37;
         }
 
 
@@ -235,13 +251,14 @@ a:hover {
     transition-duration: 1s;
 }
 
+
 .sessao1, .sessao2, .sessao3 {
 
     padding: 10px;
 }
 
 h2 {
-    font-size: 1.45em;
+    font-size: 1.20em;
     font-family: var(--fonte-google);
     margin-bottom: 10px;
     color: rgb(17, 99, 17);
@@ -255,12 +272,12 @@ h2 {
 
 .sessao2 > article > h2 {
 
-    background-image: linear-gradient(to right, rgba(0, 128, 0, 0.534), white);
+    background-image: linear-gradient(to right, var(--cor01), transparent);
 }
 
 .sessao3 > article > h2 {
 
-    background-image: linear-gradient(to right, rgba(0, 128, 0, 0.534), white);
+    background-image: linear-gradient(to right, var(--cor01), transparent);
     padding-left: 10px;
 }
 
@@ -280,6 +297,7 @@ h2 {
 }
 
 /* ===== FOTO ANIMADA ===== */
+
 .bugdroid {
 
     display: block;
@@ -288,16 +306,27 @@ h2 {
     transition-duration: 2s; 
 }
 
-
 .bugdroid:hover {
 
     transform: scale(2) translateX(50px);
+} 
+
+/* @keyframes rotate {
+
+    from {transform: rotateZ(0deg);}
+    to {transform: rotateZ(360deg);}
 }
 
+.animationSpinnerEaseOut {
+
+    animation: rotate 10s ease infinite;
+}
+ */
 /* ===== FIM FOTO ANIMADA ===== */
 
 
 .video-youtube {
+
     background-color: rgba(6, 105, 14, 0.678);
     padding: 30px;
 }
@@ -306,6 +335,8 @@ iframe {
 
      box-shadow: 8px 5px 15px 0px rgba(0, 0, 0, 0.416);
      border-radius: 10px;
+     width: 550px;
+     height: 320px;
      
 }
 
