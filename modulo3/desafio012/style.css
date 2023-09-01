@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+}
+header {
+
+    background-color: black;
+    width: 100vw;
+    height: 200px;
+}
+
+h1 {
+
+    color: white;
+    text-align: center;
+    font-size: 4em;
+    padding-top: 50PX;
+    font-weight: bold;
+}
+
+header >p {
+
+    text-transform: lowercase;
+    text-align: center;
+    color: white;
+}
+
+
+   .sessao1 {
+
+    width: 300px;
+    margin: 70px 0px 70px 0px;
+   }
+
+   .sessao1 > p {
+
+    
+   }
+
+
+
+   .sessao2 {
+    height: 850px;
+    margin: 70px 0px 70px 0px;
+    background-color: rgba(0, 0, 0, 0.288);
+    color: white;
+    background-image: url(../desafio012/imagens/background001.jpg);
+    background-position: center left;
+    background-attachment: fixed;
+   }
+
+   .sessao2 > p {
+    background-color: rgba(0, 0, 0, 0.24);
+    width: 600px;
+    font-size: 3em;
+    text-align: justify;
+    
+   }
+
+   
+   .sessao3 {
+
+    width: 300px;
+    margin: 70px 0px 70px 0px;
+   }
+
+   .sessao3 > p {
+
+    
+   }
+
+   
+   .sessao4 {
+
+    width: 300px;
+    margin: 70px 0px 70px 0px;
+    background-color: rgba(0, 0, 0, 0.288);
+    color: white;
+   }
+
+   .sessao4 > p {
+
+   
+   }
+
+
+   
+   .sessao5 {
+
+    width: 300px;
+    margin: 70px 0px 70px 0px;;
+   }
+
+   .sessao5 > p {
+
+    
+   }
+
+
+
+   .paragrafo3, .paragrafo4 {
+
+    padding-bottom: 50px;
+   }
+
+
+   footer {
+
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+   }
