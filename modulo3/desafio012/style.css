@@ -1,21 +1,31 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+:root {
+
+    --fontegoogle: 'Passion One';
+    --fontgoogle2: 'Sriracha';
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
 
 * {
 
     margin: 0px;
     padding: 0px;
 }
+
+
 html, body {
 
     min-height: 100vh;
     background-color: darkgray;
-}
-
-
-main {
-
-    min-height:  100vh;
+    font-family: var(--fonte1);
 }
 
 
@@ -29,10 +39,11 @@ h1 {
 
     color: white;
     text-align: center;
-    font-size: 4em;
+    font-size: 10vw;
     padding-top: 50PX;
     font-weight: bold;
     font-variant: small-caps;
+    font-family: var(--fontegoogle);
 }
 
 header >p {
@@ -61,15 +72,19 @@ a {
 
    .imagem {
 
-   background-color: rgba(0, 0, 0, 0.219);
+   background-color: rgba(0, 0, 0, 0.514);
    color: white;
+   box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.432);
+   background-attachment: fixed;
 
    }
 
    .imagem > p {
 
-    background-color: rgba(0, 0, 0, 0.288);
-    width: 400px;
+    background-color: rgba(0, 0, 0, 0.514);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
    }
 
    section {
@@ -78,13 +93,31 @@ a {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fontgoogle2);
+    font-size: 3.5vw;
 
-   }
+  }
 
-   .paragrafo3, .paragrafo4 {
+  .sessao2 {
 
-    padding-bottom: 50px;
-   }
+    background-image: url(../desafio012/imagens/background001.jpg);
+    background-size: cover;
+    background-position: right center;
+  }
+
+  .sessao4 {
+
+    background-image: url(../desafio012/imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+  }
+
+
+.paragrafo3, .paragrafo4 {
+
+    padding-bottom: 30px;
+}
+   
 
 
    footer {
@@ -94,4 +127,5 @@ a {
     color: white;
     padding: 10px;
     width: 100vw;
+    font-size: 1em;
    }
