@@ -6,16 +6,23 @@
     margin: 0px;
     padding: 0px;
 }
+html, body {
+
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
 
 main {
 
-    width: 100vw;
+    min-height:  100vh;
 }
+
+
 header {
 
     background-color: black;
-    width: 100vw;
-    height: 200px;
+   
 }
 
 h1 {
@@ -25,6 +32,7 @@ h1 {
     font-size: 4em;
     padding-top: 50PX;
     font-weight: bold;
+    font-variant: small-caps;
 }
 
 header >p {
@@ -32,80 +40,46 @@ header >p {
     text-transform: lowercase;
     text-align: center;
     color: white;
+    padding-bottom: 50px;
 }
 
 
-   .sessao1 {
-
-    width: 300px;
-    margin: 70px 0px 70px 0px;
-   }
-
-   .sessao1 > p {
-
-    
-   }
-
-
-
-   .sessao2 {
-    height: 850px;
-    margin: 70px 0px 70px 0px;
-    background-color: rgba(0, 0, 0, 0.288);
+a {
     color: white;
-    background-image: url(../desafio012/imagens/background001.jpg);
-    background-position: center left;
-    background-attachment: fixed;
+    text-decoration: none;
+}
+
+
+
+/* ==================== */
+
+   .normal {
+
+    background-color: white;
+    color: black;
    }
 
-   .sessao2 > p {
-    background-color: rgba(0, 0, 0, 0.24);
-    width: 600px;
-    font-size: 3em;
-    text-align: justify;
-    
+   .imagem {
+
+   background-color: rgba(0, 0, 0, 0.219);
+   color: white;
+
    }
 
-   
-   .sessao3 {
+   .imagem > p {
 
-    width: 300px;
-    margin: 70px 0px 70px 0px;
-   }
-
-   .sessao3 > p {
-
-    
-   }
-
-   
-   .sessao4 {
-
-    width: 300px;
-    margin: 70px 0px 70px 0px;
     background-color: rgba(0, 0, 0, 0.288);
-    color: white;
+    width: 400px;
    }
 
-   .sessao4 > p {
+   section {
 
-   
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+
    }
-
-
-   
-   .sessao5 {
-
-    width: 300px;
-    margin: 70px 0px 70px 0px;;
-   }
-
-   .sessao5 > p {
-
-    
-   }
-
-
 
    .paragrafo3, .paragrafo4 {
 
