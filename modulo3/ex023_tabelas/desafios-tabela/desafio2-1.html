@@ -27,7 +27,7 @@
             padding: 5px;
         }
 
-        .cabeça, .media {
+        .cabeca, .media {
 
             background-color: lightgray;
         }
@@ -35,6 +35,12 @@
         .media {
 
             text-align: center;
+        }
+
+        .cabeca:hover, .media:hover {
+
+            background-color: rgba(255, 160, 122, 0.534);
+            transition: 1s;
         }
 
         .texto {
@@ -54,6 +60,16 @@
             text-align: center;
         }
 
+        col.area {
+
+            background-color: aqua;
+        }
+
+        col.dis {
+
+            background-color: blueviolet;
+        }
+
     </style>
 
 </head>
@@ -62,18 +78,25 @@
 
     <table>
 
+        <colgroup>
+            <col class="area"> <!--Primenira coluna-->
+            <col class="dis"> <!-- segunda coluna-->
+            <col class="area"> <!-- Terceira coluna-->
+            <col class="dis"> <!--Quarta coluna, e por ai-->
+        </colgroup>
+
         <caption>Tabelas</caption>
 
         <thead>
 
             <tr>
-                <th class="cabeça" rowspan="2">Área</th>
-                <th class="cabeça" rowspan="2">Disciplinas</th>
-                <th class="cabeça" colspan="2">Notas</th>
-                <th class="cabeça" rowspan="2">Média
+                <th class="cabeca" rowspan="2">Área</th>
+                <th class="cabeca" rowspan="2">Disciplinas</th>
+                <th class="cabeca" colspan="2">Notas</th>
+                <th class="cabeca" rowspan="2">Média
                     <tr>
-                        <th class="cabeça">Nota 1</th>
-                        <th class="cabeça">Nota 2</th>
+                        <th class="cabeca">Nota 1</th>
+                        <th class="cabeca">Nota 2</th>
                         
                     </tr>
                 </th>
@@ -115,7 +138,7 @@
                         </tr>
 
                         <tr>
-                            <th class="cabeça texto" colspan="4">Média de Exatas</th>
+                            <th class="cabeca texto" colspan="4">Média de Exatas</th>
                             <td class="media">0.0</td>
 
                         </tr>
@@ -136,7 +159,7 @@
                         </tr>
 
                         <tr>
-                            <th class="cabeça texto" colspan="4">Média de Humanas</th>
+                            <th class="cabeca texto" colspan="4">Média de Humanas</th>
                             <td class="media">0.0</td>
                         </tr>
                         
