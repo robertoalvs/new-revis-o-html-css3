@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 1</title>
+
+    <style>
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        
+    }
+
+    h1 {
+
+        margin: 10px;
+        text-align: center;
+    }
+
+
+        p {
+
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.219);
+            font-size: 1.3em;
+        }
+
+        form {
+                background-color: lightgrey;
+                padding: 20px;
+                width: 500px;
+                box-shadow: 2px 2px 5px  rgba(0, 0, 0, 0.541);
+                margin: auto;
+        }
+
+        #inome, #isobre, #imail, #isenha {
+
+             border-radius: 10px;
+             width: 200px;
+             height: 20px;
+             padding: 3px;
+             text-align: center;
+             margin: 10px;
+             
+        }
+
+        #imail {
+
+            width: 280px;
+        }
+
+        #isenha {
+
+            border-radius: 0px;
+            font-size: 1.3em;
+        }
+
+        label {
+
+            display: inline-block;
+            width: 130px;
+        }
+
+        #enviar {
+
+            padding: 7px;
+            border-radius: 5px;
+            background-color: lightblue;
+            width: 100px;
+            font-weight: bold;
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Meu Primeiro Formulário</h1>
+
+    <form action="../ex025/arquivo.php" method="post" autocomplete="on">
+
+
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome" required autocomplete="username"></p>
+
+        <p><label for="isobre">Sobrenome:</label> 
+            <input type="text" name="sobre" id="isobre" required></p>
+
+            <p><label for="imail">E-mail:</label>
+
+                <input type="email" name="mail" id="imail" minlength="10" required>
+            </p>
+
+            <p><label for="isenha">Senha:</label>
+
+                <input type="password" name="senha" id="isenha" required minlength="10" autocomplete="current-password">
+            </p>
+
+            <br>
+
+        <input id="enviar" type="submit" value="ENVIAR">
+        <br>
+        <input id="enviar" type="reset" value="LIMPAR">
+
+
+    </form>
+</body>
+</html>
