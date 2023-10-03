@@ -34,6 +34,7 @@
                 width: 500px;
                 box-shadow: 2px 2px 5px  rgba(0, 0, 0, 0.541);
                 margin: auto;
+                columns: 2;
         }
 
         #inome, #isobre, #imail, #isenha {
@@ -47,15 +48,9 @@
              
         }
 
-        #imail {
-
-            width: 280px;
-        }
-
         #isenha {
 
             border-radius: 0px;
-            font-size: 1.3em;
         }
 
         label {
@@ -71,9 +66,15 @@
             background-color: lightblue;
             width: 100px;
             font-weight: bold;
-            display: block;
         }
 
+        #botoes {
+
+           margin-left: 13px;
+           margin-top: 10px;
+        }
+        
+       
 
     </style>
 </head>
@@ -85,28 +86,30 @@
 
 
         <p><label for="inome">Nome:</label> 
-            <input type="text" name="nome" id="inome" required autocomplete="username"></p>
+            <input type="text" name="nome" id="inome" required autocomplete="username" placeholder="nome de usuário"></p>
 
         <p><label for="isobre">Sobrenome:</label> 
-            <input type="text" name="sobre" id="isobre" required></p>
+            <input type="text" name="sobre" id="isobre" required placeholder="digite seu sobrenome"></p>
 
             <p><label for="imail">E-mail:</label>
 
-                <input type="email" name="mail" id="imail" minlength="10" required>
+                <input type="email" name="mail" id="imail" minlength="10" required placeholder="digite seu e-mail">
             </p>
 
             <p><label for="isenha">Senha:</label>
 
-                <input type="password" name="senha" id="isenha" required minlength="10" autocomplete="current-password">
+                <input type="password" name="senha" id="isenha" required minlength="10" autocomplete="current-password" placeholder="mínimo 10 caracteres">
             </p>
 
-            <br>
 
-        <input id="enviar" type="submit" value="ENVIAR">
-        <br>
-        <input id="enviar" type="reset" value="LIMPAR">
+            <div id="botoes">
 
-
+                <input id="enviar" type="submit" value="ENVIAR">
+                <input id="enviar" type="reset" value="LIMPAR">
+                
+            </div>
     </form>
+
+    
 </body>
 </html>
