@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+h1 {
+
+    margin: 10px;
+    text-align: center;
+}
+
+
+    p {
+
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.219);
+        font-size: 1em;
+    }
+
+    form {
+            background-color: lightgray;
+            padding: 20px;
+            width: 650px;
+            box-shadow: 2px 2px 6px  rgba(0, 0, 0, 0.616);
+            border-radius: 10px;
+            margin: auto;
+            columns: 2;
+    }
+
+    form:hover {
+
+        background-image: url(../cubo.jpg);
+        background-size: cover;
+    }
+
+    #inome, #isobre, #imail, #isenha, #idata, #itel {
+
+         border-radius: 10px;
+         width: 200px;
+         height: 20px;
+         padding: 3px 3px 3px 7px;
+         margin: 8px;
+    }
+
+   /* #isenha {
+
+         border-radius: 0px; 
+    } */
+
+    label {
+
+        display: inline-block;
+        width: 130px;
+       
+    }
+
+    #enviar {
+
+        padding: 7px;
+        border-radius: 5px;
+        background-color: lightblue;
+        width: 100px;
+        font-weight: bold;
+    }
+
+    #botoes {
+
+       margin-left: 110px;
+       margin-top: 25px;
+    }
+
+    #enviar:hover {
+
+        background-color: lightsalmon;
+        transition: 1s;
+    }
+
+    #inome:hover, #isobre:hover, #imail:hover, #isenha:hover, #idata:hover, #itel:hover {
+
+        background-color: lightskyblue;
+        transition: 1.5s;
+    }
+
+    .checkbox {
+
+        border: 2px solid lightcoral;
+        padding: 10px;
+        margin-bottom: 10px;
+        columns: 2;
+        display: inline-block;
+        margin-top: 10px;
+  }
+
+  .caixa-sexo {
+
+    width: 100px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    width: 90px;
+    border: 0px;
+  }
+
+  .caixa-sexo:hover {
+
+    border: 2px solid lightcoral;
+  }
+
+    .checkbox:hover {
+
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.432);
+        background-color: rgba(32, 178, 171, 0.39);
+        transition: 1.5s;
+    }
+
+    .leg {
+
+        font-size: 1.2em;
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+        text-align: center;
+    }
+
+    #imasculino, #ifeminino {
+
+        width: 100px;
+    }

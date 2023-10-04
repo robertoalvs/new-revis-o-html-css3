@@ -5,89 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário 1</title>
-
-    <style>
-
-    * {
-        margin: 0px;
-        padding: 0px;
-        
-    }
-
-    h1 {
-
-        margin: 10px;
-        text-align: center;
-    }
-
-
-        p {
-
-            font-family: Arial, Helvetica, sans-serif;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.219);
-            font-size: 1em;
-        }
-
-        form {
-                background-color: lightgrey;
-                padding: 20px;
-                width: 500px;
-                box-shadow: 2px 2px 5px  rgba(0, 0, 0, 0.541);
-                margin: auto;
-                columns: 2;
-        }
-
-        #inome, #isobre, #imail, #isenha, #idata {
-
-             border-radius: 10px;
-             width: 200px;
-             height: 20px;
-             padding: 3px 3px 3px 7px;
-             margin: 8px;
-        }
-
-       /* #isenha {
-
-             border-radius: 0px; 
-        } */
-
-        label {
-
-            display: inline-block;
-            width: 130px;
-           
-        }
-
-        #enviar {
-
-            padding: 7px;
-            border-radius: 5px;
-            background-color: lightblue;
-            width: 100px;
-            font-weight: bold;
-        }
-
-        #botoes {
-
-           margin-left: 13px;
-           margin-top: 25px;
-        }
-
-        #enviar:hover {
-
-            background-color: lightsalmon;
-            transition: 1s;
-        }
-
-        #inome:hover, #isobre:hover, #imail:hover, #isenha:hover, #idata:hover {
-
-            background-color: lightskyblue;
-            transition: 1.5s;
-        }
-        
-       
-
-    </style>
+    <link rel="stylesheet" href="css/form.css">
 </head>
 <body>
 
@@ -103,7 +21,7 @@
 
             <p><label for="imail">E-mail:</label>
 
-                <input type="email" name="mail" id="imail" minlength="10" required placeholder="digite seu e-mail">
+                <input type="email" name="mail" id="imail" minlength="10" required placeholder="digite seu e-mail" autocomplete="email">
             </p>
 
             <p><label for="isenha">Senha:</label>
@@ -111,6 +29,27 @@
                 <input type="password" name="senha" id="isenha" required minlength="10" autocomplete="current-password" placeholder="mínimo 10 caracteres">
 
             </p>
+
+            
+            <fieldset class="checkbox">
+
+                <legend class="leg">Jogos Favoritos</legend>
+
+                <label for="isf6"><input type="checkbox" name="sf6" id="isf6">  Street Fight 6</label>
+
+                <label for="ires4"><input type="checkbox" name="res4" id="ires4">  Resident Evil 4</label>
+
+                <label for="ipes2018"><input type="checkbox" name="pes2018" id="ipes2018">  Pro Evolution Soccer 2018</label>
+
+                <label for="iprince"><input type="checkbox" name="prince" id="iprince" checked>  Prince of Persia</label>
+
+                <label for="imickey"><input type="checkbox" name="mickey" id="imickey">  Castle of illusion</label>
+
+                <label for="ialex"><input type="checkbox" name="alex" id="ialex">  Alex kid in Miracle Wolrd</label>
+
+            </fieldset>
+
+            <br>
 
             <p><label for="isobre">Sobrenome:</label> 
 
@@ -124,6 +63,24 @@
                 <input type="date" name="data" id="idata" value="2023-10-03">
             
             </p>
+
+            <p>
+                <label for="itel">Telefone:</label>
+
+                <input type="tel" name="tel" id="itel" placeholder="(xx) x xxxx-xxxx" autocomplete="tel">
+            </p>
+
+            <fieldset class="checkbox caixa-sexo">
+
+                <legend class="leg">Sexo</legend>
+
+                <label for="imasculino"><input type="radio" name="sexo" id="imasculino" >  Masculino</label>
+
+                <label for="ifeminino"><input type="radio" name="sexo" id="ifeminino">  Feminino</label>
+
+            </fieldset>
+
+            
 
             <div id="botoes">
 
