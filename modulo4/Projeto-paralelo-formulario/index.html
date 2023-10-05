@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto paralelo Formulário Livro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+            <main>
+
+                <h1>Create a New Acount</h1>
+
+                <form action="../Projeto-paralelo-formulario/index.php" method="get">
+
+
+                    <div id="account">
+
+                        <fieldset>
+
+                            <legend>ACCOUNT</legend>
+
+                            <label for="inome">Fisrt Name:</label>
+                            <input class="input-size" type="text" name="nome" id="inome">
+
+                            <br>
+
+                            <label for="isobrenome">Last Name:</label>
+                            <input class="input-size" type="text" name="sobrenome" id="isobrenome">
+
+                            <br>
+
+                            <label for="iemail">Email:</label>
+                            <input class="input-size" type="email" name="email" id="iemail">
+
+                            <br>
+
+                            <label for="ipass">Password:</label>
+                            <input class="input-pass" type="password" name="pass" id="ipass">
+
+                            <br>
+
+                            <label for="irepass">Re-enter Password:</label>
+                            <input class="input-pass" type="password" name="repass" id="irepass">
+
+                        </fieldset>
+
+                    </div>
+
+                    <div id="account">
+
+                        <fieldset>
+
+                            <legend>ADDRESS</legend>
+
+                            <label for="istreet">Street Address:</label>
+                            <input class="input-size" type="text" name="address" id="iaddress">
+
+                            <br>
+
+                            <label for="icity">City:</label>
+                            <input class="input-size" type="text" name="city" id="icity">
+
+                            <br>
+
+                            <label for="iestado">State</label>
+                            <select name="estado" id="iestado">
+
+                                <optgroup label="Região Sudeste">
+
+                                    <option value="">---- Escolher ----</option>
+
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+
+                                </optgroup>
+
+                            </select>
+
+                            <br>
+                            
+                            <label for="izip">ZIP CODE</label>
+                            <input class="input-size size" type="number" name="zip" id="izip">
+
+                        </fieldset>
+
+                    </div>
+
+                    <div id="account">
+
+                        <fieldset>
+
+                            <legend>PUBLIC PROFILE</legend>
+                            
+                        </fieldset>
+
+                    </div>
+
+                    <div id="account">
+
+                        <fieldset>
+
+                            <legend>EMAILS</legend>
+                            
+                        </fieldset>
+
+                    </div>
+
+                    
+                </form>
+            </main>
+</body>
+</html>
