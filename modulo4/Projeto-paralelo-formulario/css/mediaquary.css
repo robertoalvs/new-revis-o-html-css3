@@ -1,2 +1,36 @@
 @charset "UTF-8";
 
+
+
+main {
+
+    width: 480px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+
+div {
+
+    width: 470px;
+}
+
+fieldset {
+
+    width: 440px;
+}
+
+legend {
+
+    width: 100%;
+}
+
+label {
+
+    width: 100px;
+}
+
+.check-box {
+
+    width: 400px;
+}
