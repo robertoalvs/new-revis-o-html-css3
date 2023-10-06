@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto paralelo Formulário Livro</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaquary.css">
 </head>
 <body>
 
@@ -13,7 +14,7 @@
 
                 <h1>Create a New Acount</h1>
 
-                <form action="../Projeto-paralelo-formulario/index.php" method="get">
+                <form action="../Projeto-paralelo-formulario/index.php" method="get" autocomplete="on">
 
 
                     <div id="account">
@@ -23,27 +24,27 @@
                             <legend>ACCOUNT</legend>
 
                             <label for="inome">Fisrt Name:</label>
-                            <input class="input-size" type="text" name="nome" id="inome">
+                            <input class="input-size" type="text" name="nome" id="inome" autocomplete="username" required placeholder="primeiro nome">
 
                             <br>
 
                             <label for="isobrenome">Last Name:</label>
-                            <input class="input-size" type="text" name="sobrenome" id="isobrenome">
+                            <input class="input-size" type="text" name="sobrenome" id="isobrenome" autocomplete="username" required placeholder="sobrenome">
 
                             <br>
 
                             <label for="iemail">Email:</label>
-                            <input class="input-size" type="email" name="email" id="iemail">
+                            <input class="input-size" type="email" name="email" id="iemail" autocomplete="email" required placeholder="e-mail">
 
                             <br>
 
                             <label for="ipass">Password:</label>
-                            <input class="input-pass" type="password" name="pass" id="ipass">
+                            <input class="input-pass" type="password" name="pass" id="ipass" required placeholder="********" minlength="8" autocomplete="current-password">
 
                             <br>
 
                             <label for="irepass">Re-enter Password:</label>
-                            <input class="input-pass" type="password" name="repass" id="irepass">
+                            <input class="input-pass" type="password" name="repass" id="irepass" required placeholder="********" autocomplete="current-password">
 
                         </fieldset>
 
@@ -56,21 +57,21 @@
                             <legend>ADDRESS</legend>
 
                             <label for="istreet">Street Address:</label>
-                            <input class="input-size" type="text" name="address" id="iaddress">
+                            <input class="input-size" type="text" name="address" id="iaddress" autocomplete="street-address" required placeholder="endereço ">
 
                             <br>
 
                             <label for="icity">City:</label>
-                            <input class="input-size" type="text" name="city" id="icity">
+                            <input class="input-size" type="text" name="city" id="icity" required placeholder="cidade" autocomplete="country">
 
                             <br>
 
                             <label for="iestado">State</label>
-                            <select name="estado" id="iestado">
+                            <select name="estado" id="iestado" required autocomplete="country-name">
 
                                 <optgroup label="Região Sudeste">
 
-                                    <option value="">---- Escolher ----</option>
+                                    <option value="" selected >---- Escolher ----</option>
 
                                     <option value="SC">Santa Catarina</option>
                                     <option value="SP">São Paulo</option>
@@ -83,7 +84,7 @@
                             <br>
                             
                             <label for="izip">ZIP CODE</label>
-                            <input class="input-size size" type="number" name="zip" id="izip">
+                            <input class="input-size size" type="number" name="zip" id="izip" required placeholder="xxxxx-xxx" autocomplete="postal-code">
 
                         </fieldset>
 
@@ -94,23 +95,62 @@
                         <fieldset>
 
                             <legend>PUBLIC PROFILE</legend>
-                            
+
+                            <label for="ifoto">Picture:</label>
+                            <input type="file" name="foto" id="ifoto">
+
+                            <label for="iscreen">Screen Name:</label>
+                            <input type="text" name="screen" id="iscreen">
+
+                            <br>
+
+                            <label for="iweb">Web:</label>
+                            <input type="url" name="web" id="iweb">
+
+                            <br>
+
+                            <label for="ipergunta">Bio:</label>
+                            <textarea name="pergunta" id="ipergunta" cols="30" rows="10"></textarea>
+
+                            <br>
+
+                            <label>Gender:</label>
+
+                            <label class="label-radio" for="imasc"><input type="radio" name="sexo" id="imasc">  Male</label>
+
+                            <label class="label-radio" for="ifem"><input type="radio" name="sexo" id="ifem">  Female</label>
+
                         </fieldset>
 
                     </div>
 
-                    <div id="account">
+                    <div id="account" >
 
                         <fieldset>
 
                             <legend>EMAILS</legend>
+
+                            <label class="check-box" for="ipromo"><input type="checkbox" name="promo" id="ipromo">  It is okay to email me with messages from other users.</label>
+
+                            <br>
+
+                            <label class="check-box" for="ipromocao"><input type="checkbox" name="promocao" id="ipromocao">  It is okay to email me with occasional promotions about our other products</label>
                             
                         </fieldset>
 
                     </div>
 
-                    
+
+                    <div id="botoes">
+
+                        <input class="botoes" type="submit" value="CREATE ACCOUNT">
+
+                        <input class="botoes" type="reset" value="RESET">
+
+                    </div>
+
                 </form>
+
             </main>
 </body>
 </html>
